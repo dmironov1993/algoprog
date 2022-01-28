@@ -1,4 +1,4 @@
-#https://algoprog.ru/material/p2771
+//https://algoprog.ru/material/p2771
 
 #include <iostream>
 #include <vector>
