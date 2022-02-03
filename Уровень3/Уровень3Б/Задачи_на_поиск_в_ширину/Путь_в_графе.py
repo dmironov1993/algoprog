@@ -14,6 +14,7 @@ a = deque()
 a.append(s)
 dist[s] = 0
 prev = [None] * n
+prev[s] = -1
 while a:
   v = a.popleft()
   for u in range(n):
@@ -28,7 +29,7 @@ if dist[e] is not None:
     path = []
     path.append(e + 1)
     final = prev[e]
-    while prev[final]:
+    while prev[final] != -1:
       path.append(final + 1)
       final = prev[final]
     path.append(s + 1)
