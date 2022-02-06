@@ -1,5 +1,6 @@
 #https://algoprog.ru/material/p174
 
+
 n = int(input())
 cnt = 0
 seen = set()
